@@ -51,6 +51,8 @@ gem 'bourbon'
 gem 'neat'
 gem 'awesome_print'
 
+gem 'protected_attributes'
+
 group :production do
   gem 'rails_12factor'
 end

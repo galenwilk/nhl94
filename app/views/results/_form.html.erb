@@ -1,0 +1,10 @@
+<%= simple_form_for @result do |f| %>
+  <%= f.input :date, as: :datetime  %>
+  <%= f.input :player1Id %>
+  <%= f.input :team1 %>
+  <%= f.input :team1Score %>
+  <%= f.input :player2Id %>
+  <%= f.input :team2 %>
+  <%= f.input :team2Score %>
+  <%= f.button :submit %>
+<% end %>

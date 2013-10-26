@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  date: 2013-10-26 16:55:41
+  team1: MyString
+  team1Score: 
+  team2: MyString
+  steam2Score: 
+  player1Id: 
+  player2Id: 
+
+two:
+  date: 2013-10-26 16:55:41
+  team1: MyString
+  team1Score: 
+  team2: MyString
+  steam2Score: 
+  player1Id: 
+  player2Id: 
