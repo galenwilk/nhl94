@@ -43,10 +43,4 @@ class ResultsController < ApplicationController
   	 @result = Result.find params[:id]
   end
   
- #  private 
-#   
-#    	def result_params
-#       params.require(:result).permit(:date, :player1Id, :team1, :team1Score, :player2Id, :team2, :team2Score)
-#     end
-
 end

@@ -1,2 +1,11 @@
 <h1>Results - Show</h1>
 
+<p>Date: <%= @result.date %></p>
+<p>Player 1:<%= @result.player1Id %></p>
+<p>Team 1: <%= @result.team1 %></p>
+<p>Team 1 Score: <%= @result.team1Score %></p>
+<p>Player 2: <%= @result.player2Id %></p>
+<p>Team 2: <%= @result.team2 %></p>
+<p>Team 2 Score: <%= @result.team2Score %></p>
+
+<p><%= link_to "Back to Results", results_path %></p>
