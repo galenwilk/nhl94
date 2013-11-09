@@ -1,26 +1,28 @@
 <h1>List of Teams</h1>
 
-<table border="1">
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>Rating</th>
-      <th>Logo</th>
-      <th>Options</th>
-    </tr>
-  </thead>
+<div class="table-responsive">
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Rating</th>
+        <th>Logo</th>
+        <th>Options</th>
+      </tr>
+    </thead>
+  
+    <% @teams.each do |team| %>
+      <tr>
+        <td><%= team.name %></td>
+        <td><%= team.rating %></td>
+        <td><%= image_tag "team_logos/" + team.logo, :class => "img-thumbnail img-table"  %></td>
+        <td>
+          <%= link_to 'Edit', edit_team_path(team.id), :class => "btn btn-primary btn-xs" %>
+          <%= link_to 'Delete', team, :class => "btn btn-danger btn-xs", :method => 'delete' %>
+        </td>
+      </tr>
+    <% end -%>
+  </table>
+</div>
 
-  <% @teams.each do |team| %>
-    <tr>
-      <td><%= team.name %></td>
-      <td><%= team.rating %></td>
-      <td><%= image_tag "team_logos/" + team.logo %></td>
-      <td>
-        <%= link_to 'Edit', edit_team_path(team.id) %>
-        <%= link_to 'Delete', team, :method => 'delete' %>
-      </td>
-    </tr>
-  <% end -%>
-</table>
-
-<p><%= link_to 'New Team', new_team_path %></p>
+<p><%= link_to 'New Team', new_team_path, :class => "btn btn-primary" %></p>

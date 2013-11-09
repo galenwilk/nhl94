@@ -1,9 +1,9 @@
 <%= simple_form_for @team do |f| %>
 
-  <%= f.input :name %>
-  <%= f.input :rating %>
-  <%= f.input :logo %>
+  <%= f.input :name, wrapper_html: { class: 'form-group' }, input_html: { class: 'form-control' } %>
+  <%= f.input :rating, wrapper_html: { class: 'form-group' }, input_html: { class: 'form-control' } %>
+  <%= f.input :logo, wrapper_html: { class: 'form-group' }, input_html: { class: 'form-control' } %>
   <%#= f.input :logo, as: :file %>
-  <%= f.button :submit %>
+  <%= f.button :submit, :class => "btn-primary" %>
   
 <% end %>
