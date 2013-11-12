@@ -1,5 +1,7 @@
 Nhl94::Application.routes.draw do
 
+  resources :players
+
   devise_for :users
 	root :to => "home#index"
 	

@@ -1,0 +1,8 @@
+<%= simple_form_for(@player) do |f| %>
+  <%= f.error_notification %>
+
+    <%= f.input :name, wrapper_html: { class: 'form-group' }, input_html: { class: 'form-control' } %>
+    <%= f.input :email, wrapper_html: { class: 'form-group' }, input_html: { class: 'form-control' } %>
+    <%= f.button :submit, :class => "btn-primary"  %>
+
+<% end %>
