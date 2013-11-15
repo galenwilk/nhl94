@@ -1,11 +1,11 @@
 <%= simple_form_for @result do |f| %>
 
   <%= f.input :date, as: :string, wrapper_html: { class: 'form-group' }, input_html: { class: 'form-control form_datetime'} %>
-  <%= f.association :players, wrapper_html: { class: 'form-group' }, input_html: { class: 'form-control' } %>
-  <%= f.association :teams, wrapper_html: { class: 'form-group' }, input_html: { class: 'form-control' } %>
+  <%= f.input :player1Id, wrapper_html: { class: 'form-group' }, input_html: { class: 'form-control' } %>
+  <%= f.input :team1, wrapper_html: { class: 'form-group' }, input_html: { class: 'form-control' } %>
   <%= f.input :team1Score, wrapper_html: { class: 'form-group' }, input_html: { class: 'form-control' } %>
-  <%#= f.association :players, wrapper_html: { class: 'form-group' }, input_html: { class: 'form-control' } %>
-  <%#= f.association :teams, wrapper_html: { class: 'form-group' }, input_html: { class: 'form-control' } %>
+  <%= f.input :player2Id, wrapper_html: { class: 'form-group' }, input_html: { class: 'form-control' } %>
+  <%= f.input :team2, wrapper_html: { class: 'form-group' }, input_html: { class: 'form-control' } %>
   <%= f.input :team2Score, wrapper_html: { class: 'form-group' }, input_html: { class: 'form-control' } %>
   
   <%= f.button :submit, :class => 'btn-primary'  %>
