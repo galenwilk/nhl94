@@ -32,3 +32,79 @@ Team.create(name: 'TORONTO MAPLE LEAFS', rating: "72", logo: "leafs.gif")
 Team.create(name: 'VANCOUVER CANUCKS', rating: "71", logo: "canucks.gif")
 Team.create(name: 'WASHINGTON CAPITALS', rating: "70", logo: "capitals.gif")
 Team.create(name: 'WINNIPEG JETS', rating: "72", logo: "jets.gif")
+
+matt = Player.create(name: "Matt", email: "matt@leaf.me")
+galen = Player.create(name: "Galen", email: "galen@leaf.me")
+evan = Player.create(name: "Evan", email: "evan@leaf.me")
+
+team1, team2 = Team.all.sample(2)
+
+Result.create(
+           date: Date.today,
+           team1: team1.id,
+           team2: team2.id,
+           team1Score: 3,
+           team2Score: 2,
+           player1Id: matt.id,
+           player2Id: galen.id
+           )
+
+team1, team2 = Team.all.sample(2)
+
+Result.create(
+           date: Date.today,
+           team1: team1.id,
+           team2: team2.id,
+           team1Score: 1,
+           team2Score: 3,
+           player1Id: matt.id,
+           player2Id: galen.id
+           )
+
+team1, team2 = Team.all.sample(2)
+
+Result.create(
+           date: Date.today,
+           team1: team1.id,
+           team2: team2.id,
+           team1Score: 1,
+           team2Score: 1,
+           player1Id: matt.id,
+           player2Id: galen.id
+           )
+
+team1, team2 = Team.all.sample(2)
+
+Result.create(
+           date: Date.today,
+           team1: team1.id,
+           team2: team2.id,
+           team1Score: 3,
+           team2Score: 2,
+           player1Id: evan.id,
+           player2Id: galen.id
+           )
+
+team1, team2 = Team.all.sample(2)
+
+Result.create(
+           date: Date.today,
+           team1: team1.id,
+           team2: team2.id,
+           team1Score: 1,
+           team2Score: 3,
+           player1Id: evan.id,
+           player2Id: galen.id
+           )
+
+team1, team2 = Team.all.sample(2)
+
+Result.create(
+           date: Date.today,
+           team1: team1.id,
+           team2: team2.id,
+           team1Score: 1,
+           team2Score: 1,
+           player1Id: evan.id,
+           player2Id: galen.id
+           )
