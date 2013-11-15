@@ -53,6 +53,8 @@ gem 'awesome_print'
 
 gem 'protected_attributes'
 
+gem 'squeel'
+
 group :production do
   gem 'rails_12factor'
 end
