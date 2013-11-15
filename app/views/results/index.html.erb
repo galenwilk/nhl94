@@ -1,4 +1,4 @@
-<h1>List of Results</h1>
+<h1>Results</h1>
 
 <div class="table-responsive">
   <table class="table">
@@ -17,12 +17,12 @@
   
     <% @results.each do |result| %>
       <tr>
-        <td><%= link_to result.date, result %></td>
-        <td><%= result.player1Id %></td>
-        <td><%= result.team1 %></td>
+        <td><%= link_to result.formatted_date, result %></td>
+        <td class="<%# if winner == player1 %>"><%= result.player_1.name.titleize %></td>
+        <td><%= result.team_1.name.titleize %></td>
         <td><%= result.team1Score %></td>
-        <td><%= result.player2Id %></td>
-        <td><%= result.team2 %></td>
+        <td><%= result.player_2.name.titleize %></td>
+        <td><%= result.team_2.name.titleize %></td>
         <td><%= result.team2Score %></td>
         <td>
           <%= link_to 'Edit', edit_result_path(result.id), :class => "btn btn-primary btn-xs" %>

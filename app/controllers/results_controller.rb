@@ -3,6 +3,7 @@ class ResultsController < ApplicationController
   def index
 
   	@results = Result.all
+  	@teams = Team.all
 
   end
 
@@ -42,5 +43,6 @@ class ResultsController < ApplicationController
   def show
   	 @result = Result.find params[:id]
   end
+
   
 end
