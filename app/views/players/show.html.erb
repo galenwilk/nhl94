@@ -10,5 +10,16 @@
   <%= @player.email %>
 </p>
 
+<p>
+  <strong>Wins:</strong>
+  <%= @player.win_count %>
+</p>
+
+<p>
+  <strong>Losses:</strong>
+  <%= @player.loss_count %>
+</p>
+
+
 <%= link_to 'Edit', edit_player_path(@player) %> |
 <%= link_to 'Back', players_path %>
